@@ -30,15 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](images/Screenshot%202023-07-09%20at%2000.57.10.png)
 
 ### Links
 
@@ -58,17 +50,23 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+it is better to call all the document query selector without including any elements
 
 ```js
-const proudOfThisFunc = () => {
-    console.log('🎉');
-};
+// PROUD OF THIS FUNCTION
+btnReset.addEventListener('click', function () {
+    bill.value = '';
+    customPercent.value = '';
+    people.value = '';
+    tipAmountPerPerson.innerText = '$0.00';
+    totalPerPerson.innerText = '$0.00';
+
+    //RESETING THR BUTTONS
+    btnReset.classList.remove('active');
+});
 ```
 
 ## Author
 
--   Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
--   Twitter - [@yourusername](https://www.twitter.com/yourusername)
+-   Frontend Mentor - [@Oluwatobiiiiii](https://www.frontendmentor.io/profile/Oluwatobiiiiii)
+-   Twitter - [@Oluwatobicodes](https://www.twitter.com/Oluwatobicodes)
