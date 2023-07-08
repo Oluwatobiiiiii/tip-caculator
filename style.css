@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+    ---Verydarkcyan--: hsl(183, 100%, 15%);
+    ---Darkgrayishcyan--: hsl(186, 14%, 43%);
+    ---Strongcyan--: hsl(172, 67%, 45%);
+    ---Grayishcyan--: hsl(184, 14%, 56%);
+    ---Lightgrayishcyan--: hsl(185, 41%, 84%);
+    ---Verylightgrayishcyan--: hsl(189, 41%, 97%);
+    ---White--: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(---Lightgrayishcyan--);
+    font-family: 'Space Mono', monospace;
+}
+
+.split-tip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.split-table {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 800px;
+    background-color: var(---White--);
+    height: 400px;
+    padding: 2rem;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.split-Logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.split-1 {
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-bill {
+    flex: 33.3%;
+}
+
+#bill-value {
+    width: 100%;
+    height: 45%;
+    border: none;
+    background-color: var(---Verylightgrayishcyan--);
+    text-align: right;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(---Verydarkcyan--);
+    margin-top: 0.6rem;
+}
+
+.dollar-sign {
+    position: absolute;
+    padding: 1.5rem;
+}
+
+.percentages {
+    flex: 33.3%;
+}
+
+.percentages-btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.34rem;
+    margin-bottom: 20px;
+    margin-top: 0.6rem;
+}
+
+.btn-1 {
+    width: 7.5rem;
+    padding: 0.53rem;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #00494d;
+    border: none;
+    color: #ffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#custom-input {
+    width: 7.5rem;
+    background-color: var(---Verylightgrayishcyan--);
+    border: none;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 5px;
+    color: var(---Verydarkcyan--);
+}
+
+.people {
+    flex: 33.3%;
+}
+
+.people-icon {
+    position: absolute;
+    padding: 1.5rem;
+}
+
+#people-value {
+    width: 100%;
+    height: 45%;
+    border: none;
+    background-color: var(---Verylightgrayishcyan--);
+    text-align: right;
+    font-size: 24px;
+    color: var(---Verydarkcyan--);
+    font-weight: 700;
+    margin-top: 0.6rem;
+}
+
+.split-2 {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(---Verydarkcyan--);
+    padding: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.total-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total-1 > h2 {
+    font-size: 28.5px;
+    color: var(---Grayishcyan--);
+    margin-bottom: 0.5rem;
+}
+
+.total-2 > h2 {
+    font-size: 28.5px;
+    color: var(---Grayishcyan--);
+}
+
+.total-text-1 > p:nth-child(1) {
+    color: var(---White--);
+}
+
+.total-text-2 > p:nth-child(1) {
+    color: var(---White--);
+}
+
+.total-text-1 > p:nth-child(2) {
+    font-size: 0.7rem;
+    color: var(---Grayishcyan--);
+}
+
+.total-text-2 > p:nth-child(2) {
+    font-size: 0.7rem;
+    color: var(---Grayishcyan--);
+}
+
+.reset {
+    width: 100%;
+    height: 40px;
+    background-color: var(---Strongcyan--);
+    font-weight: 700;
+    border: none;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(---Strongcyan--);
+    color: var(---Verydarkcyan--);
+    font-weight: 700;
+}
+
+/* MEDIA RESPONSIVITY */
+
+@media screen and (max-width: 768px) {
+    .split-tip {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .split-Logo {
+        margin-top: 30vh;
+    }
+
+    .main-bill {
+        margin-bottom: 2rem;
+    }
+
+    .split-table {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        height: 650px;
+    }
+
+    #bill-value {
+        height: 100%;
+    }
+
+    .dollar-sign {
+        padding: 2rem;
+    }
+
+    .percentages {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .percentages-btn {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .people {
+        margin-top: 0.5rem;
+    }
+
+    .people-icon {
+        padding: 2rem;
+    }
+
+    #people-value {
+        height: 100%;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Tip Caculator</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://kit.fontawesome.com/0ede7196cc.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <section class="split-tip">
+            <div class="split-Logo">
+                <img src="images/logo.svg" alt="SPLIT TIP LOGO" />
+            </div>
+            <div class="split-table">
+                <div class="split-1">
+                    <div class="main-bill">
+                        <p>Bill</p>
+                        <img
+                            src="images/icon-dollar.svg"
+                            alt="dollar-sign"
+                            class="dollar-sign"
+                        />
+                        <input
+                            type="number"
+                            name="hi"
+                            id="bill-value"
+                            required
+                        />
+                    </div>
+
+                    <div class="percentages">
+                        <p>Select Tip %</p>
+                        <div class="percentages-btn">
+                            <button class="btn-1" value="5">5%</button>
+                            <button class="btn-1" value="10">10%</button>
+                            <button class="btn-1" value="15">15%</button>
+                            <button class="btn-1" value="25">25%</button>
+                            <button class="btn-1" value="50">50%</button>
+
+                            <input
+                                type="number"
+                                name=""
+                                aria-placeholder="0"
+                                class="btn-1"
+                                id="custom-input"
+                                placeholder="Custom"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="people">
+                        <p>Number for people</p>
+                        <img
+                            src="images/icon-person.svg"
+                            alt="People-Icon"
+                            class="people-icon"
+                        />
+                        <input type="number" id="people-value" required />
+                    </div>
+                </div>
+
+                <div class="split-2">
+                    <div class="totals">
+                        <div class="total-1">
+                            <div class="total-text-1">
+                                <p>Tip Amount</p>
+                                <p>/person</p>
+                            </div>
+                            <h2 class="initalValue">$0.00</h2>
+                        </div>
+
+                        <div class="total-2">
+                            <div class="total-text-2">
+                                <p>Total</p>
+                                <p>/person</p>
+                            </div>
+                            <h2 class="initalValueTwo">$0.00</h2>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button class="reset">RESET</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="app.js"></script>
+    </body>
+</html>
