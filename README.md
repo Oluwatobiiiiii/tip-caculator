@@ -49,6 +49,10 @@ Users should be able to:
 
 it is better to call all the document query selector without including any elements
 
+### Useful resources
+
+MDN DOCS: https://developer.mozilla.org/
+
 ```js
 // PROUD OF THIS FUNCTION
 btnReset.addEventListener('click', function () {
