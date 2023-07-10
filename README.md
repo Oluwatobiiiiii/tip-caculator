@@ -47,6 +47,7 @@ Users should be able to:
 ### What I learned
 
 it is better to call all the document query selector without including any elements
+I learnt how to use a loop to iterate over diffrent buttons with the same selector
 
 ### Useful resources
 
@@ -54,6 +55,7 @@ MDN DOCS: https://developer.mozilla.org/
 
 ```js
 // PROUD OF THIS FUNCTION
+
 btnReset.addEventListener('click', function () {
     bill.value = '';
     customPercent.value = '';
@@ -64,6 +66,26 @@ btnReset.addEventListener('click', function () {
     //RESETING THR BUTTONS
     btnReset.classList.remove('active');
 });
+
+//I USED A LOOP TO ITERATE OVER DIFFRENT FUNCTIONS
+
+for (let i = 0; i < percentButtons.length; i++) {
+    percentButtons[i].addEventListener('click', function () {
+        let percentage = Number(percentButtons[i].value);
+        console.log(percentage);
+
+        const tipAmount =
+            ((percentage / 100) * parseFloat(bill.value)) /
+            Number(people.value);
+        console.log(tipAmount);
+        const totalPerson =
+            parseFloat(bill.value) / Number(people.value) + tipAmount;
+        const newTipAmount = tipAmount.toFixed(2);
+        const newTotalPerson = totalPerson.toFixed(2);
+        tipAmountPerPerson.innerText = `$${newTipAmount}`;
+        totalPerPerson.innerText = `$${newTotalPerson}`;
+    });
+}
 ```
 
 ## Author
