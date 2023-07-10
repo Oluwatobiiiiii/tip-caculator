@@ -206,6 +206,21 @@ body {
     font-weight: 700;
 }
 
+.copy1 {
+    color: #00494d;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.coding-ninja {
+    padding-top: 1rem;
+}
+
+.right {
+    text-align: center;
+}
+
 /* MEDIA RESPONSIVITY */
 
 @media screen and (max-width: 768px) {

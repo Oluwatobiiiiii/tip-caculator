@@ -17,6 +17,11 @@
             href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="shortcut icon"
+            href="images/favicon-32x32.png"
+            type="image/x-icon"
+        />
     </head>
     <body>
         <section class="split-tip">
@@ -27,6 +32,7 @@
                 <div class="split-1">
                     <div class="main-bill">
                         <p>Bill</p>
+
                         <img
                             src="images/icon-dollar.svg"
                             alt="dollar-sign"
@@ -41,20 +47,58 @@
                         />
                     </div>
 
+                    <div class="people">
+                        <p>Number of people</p>
+
+                        <img
+                            src="images/icon-person.svg"
+                            alt="People-Icon"
+                            class="people-icon"
+                        />
+                        <input
+                            type="number"
+                            id="people-value"
+                            placeholder="0"
+                            required
+                        />
+                    </div>
+
                     <div class="percentages">
                         <p>Select Tip %</p>
                         <div class="percentages-btn">
-                            <button class="btn-1" id="btn" value="5">5%</button>
-                            <button class="btn-1" id="btn" value="10">
+                            <button class="btn-1" id="btn" value="5" data-="5">
+                                5%
+                            </button>
+                            <button
+                                class="btn-1"
+                                id="btn"
+                                value="10"
+                                data-="10"
+                            >
                                 10%
                             </button>
-                            <button class="btn-1" id="btn" value="15">
+                            <button
+                                class="btn-1"
+                                id="btn"
+                                value="15"
+                                data-="15"
+                            >
                                 15%
                             </button>
-                            <button class="btn-1" id="btn" value="25">
+                            <button
+                                class="btn-1"
+                                id="btn"
+                                value="25"
+                                data-="25"
+                            >
                                 25%
                             </button>
-                            <button class="btn-1" id="btn" value="50">
+                            <button
+                                class="btn-1"
+                                id="btn"
+                                value="50"
+                                data-="50"
+                            >
                                 50%
                             </button>
 
@@ -67,21 +111,6 @@
                                 placeholder="Custom"
                             />
                         </div>
-                    </div>
-
-                    <div class="people">
-                        <p>Number for people</p>
-                        <img
-                            src="images/icon-person.svg"
-                            alt="People-Icon"
-                            class="people-icon"
-                        />
-                        <input
-                            type="number"
-                            id="people-value"
-                            placeholder="0"
-                            required
-                        />
                     </div>
                 </div>
 
@@ -107,6 +136,11 @@
                         <button class="reset">RESET</button>
                     </div>
                 </div>
+            </div>
+            <div class="right">
+                <a href="https://linktr.ee/codingninja" class="copy1"
+                    ><p class="coding-ninja">Coding Ninja &copy;</p>
+                </a>
             </div>
         </section>
         <script src="app.js"></script>
